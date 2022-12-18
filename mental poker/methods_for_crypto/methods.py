@@ -1,4 +1,4 @@
-def exp_mod(a, x, p) -> int:
+def exp_mod(a:int, x:int, p:int) -> int:
     b = convert_to_binary_num(x)
     y = 1
     s = a
@@ -18,7 +18,7 @@ def gcd(a: int, b: int) -> int:
     return a
 
 
-def convert_to_binary_num(x) -> list:
+def convert_to_binary_num(x:int) -> list:
     binary_number = ''
     while x > 0:
         binary_number = str(x % 2) + binary_number
@@ -27,7 +27,7 @@ def convert_to_binary_num(x) -> list:
     return binary_number
 
 
-def euclidean_algorithm(a, b) -> list:
+def euclidean_algorithm(a:int, b:int) -> list:
     u = [a, 1, 0]
     v = [b, 0, 1]
 
